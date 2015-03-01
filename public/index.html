@@ -26,6 +26,8 @@
         #gameBox {
             background-color: #F0E68C;
             height: 65%;
+         //   width: 100%;
+           // position: absolute;
         }
     
         p {
@@ -36,22 +38,41 @@
     
         #footer {
             background-color: #FA8072;
-            height: 5%;
-            
+            text-align: right;
+            color: #191970;
+            padding-top: 5px;
         }
+    
+        body {
+            height: 500px;
+        }
+    
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            margin-bottom: 60px;
+        }
+    
+        #gameField {
+            height: 555px;
+        }
+
     </style>
     </head>
     
     <body>
         <div class="container-fluid" id="bigBox">
             <div class="row" id="headerBox">
-                <h1>Find the invisible cow</h1>
+                <h1>Find the invisible pig</h1>
             </div>
             <div class="row" id="gameBox">
-                This is a game
+                <canvas id="gameField">
+                </canvas>
             </div>
             <div class="row" id="footer">
-                This is a footer
+                <p>Made by Sonia Uppal.</p>
             </div>
         </div>
     </body>
