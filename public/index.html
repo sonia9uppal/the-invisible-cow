@@ -4,6 +4,12 @@
         <link href="http://fonts.googleapis.com/css?family=Arvo|Chewy|Amatic+SC" rel='stylesheet' type='text/css'>
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        
+        #bigBox {
+            min-height: 100%;
+            height: auto;
+        }
+    
         h1 {
             color: #191970;
             text-align: center;
@@ -11,8 +17,9 @@
             font-size: 50px;
         }
     
+    
         #headerBox {
-            background-color: rgba(100, 237, 227, 0.28);
+            background-color: #66CDAA;
             height: 30%;
         }
     
@@ -29,7 +36,6 @@
     
         #footer {
             background-color: #FA8072;
-            width: 100%;
             height: 5%;
             
         }
@@ -37,14 +43,16 @@
     </head>
     
     <body>
-        <div id="headerBox">
-            <h1>Find the invisible cow</h1>
-        </div>
-        <div id="gameBox">
-            
-        </div>
-        <div id="footer">
-            
+        <div class="container-fluid" id="bigBox">
+            <div class="row" id="headerBox">
+                <h1>Find the invisible cow</h1>
+            </div>
+            <div class="row" id="gameBox">
+                This is a game
+            </div>
+            <div class="row" id="footer">
+                This is a footer
+            </div>
         </div>
     </body>
 </html>
